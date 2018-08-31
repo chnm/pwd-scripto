@@ -10,7 +10,6 @@ body {
     background-image: url('../../../../../themes/pwd/asset/img/bg.jpg');
 }
 
-
 button:disabled, 
 button.inactive, 
 .button:disabled, 
@@ -18,6 +17,11 @@ button.inactive,
 input[type="submit"]:disabled, 
 input[type="submit"].inactive {
     border-top-width: 3px;
+}
+
+select {
+    background: $grey-color-light url(../../../../../application/asset/img/select-arrow.svg) no-repeat right (.25 * $spacing-unit) center;
+    background-size: .25 * $spacing-unit;
 }
 
 button,
