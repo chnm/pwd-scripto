@@ -66,6 +66,21 @@ input[type="submit"] {
     border-bottom: 1px solid $grey-color;
 }
 
+.user.open .user-toggle::before,
+.user-menu,
+.sorting-toggle.open > a::after, 
+.filtering-toggle.open > a::after,
+.sorting-toggle.open > form, 
+.filtering-toggle.open > form {
+    border-radius: 0;
+}
+
+.user-menu {
+    top: 1.75 * $spacing-unit;
+    text-align: left;
+    margin-top: -1px;
+}
+
 .post-title {
     font-size: 2 * $base-font-size;
 }
