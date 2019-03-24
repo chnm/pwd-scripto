@@ -109,8 +109,16 @@ input[type="submit"] {
     margin-top: 0;
 }
 
+.wikitext-flex {
+	align-content: flex-start;
+}
+
 .panzoom-container {
     background-color: #fff;
+}
+
+.change-summary {
+	margin-top: (-1.75 * $spacing-unit);
 }
 
 #compare-table td {
