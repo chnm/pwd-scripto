@@ -144,6 +144,15 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
 
 .post-title {
     font-size: 2 * $base-font-size;
+    text-align: center;
+}
+
+.post-subtitle {
+	font-size: $base-font-size;
+	margin-top: (-.25 * $spacing-unit);
+	text-align: center;
+}
+
 }
 
 .post-content .resource-tile h4 {
