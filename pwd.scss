@@ -10,6 +10,11 @@ body {
     background-image: url('../../../../../themes/pwd/asset/img/bg.jpg');
 }
 
+hr {
+	border: 1px solid #000;
+	margin: $spacing-unit 0;
+}
+
 button:disabled, 
 button.inactive, 
 .button:disabled, 
