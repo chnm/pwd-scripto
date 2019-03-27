@@ -189,6 +189,21 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
 	margin-top: (-1.75 * $spacing-unit);
 }
 
+.wikitext-editor-buttons {
+	background-color: $light-blue-color;
+	border: 1px solid #000;
+	border-top-width: 3px;
+	
+	.button,
+	button {
+		color: #000;
+		
+		&:hover {
+			box-shadow: 0 0 0 1px #000 inset;
+		}
+	}
+}
+
 .wikitext-flex .textarea-flex textarea {
 	border-color: #000;
 }
