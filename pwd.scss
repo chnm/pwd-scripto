@@ -82,6 +82,10 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
 	}
 }
 
+ul.messages .success {
+	background-color: transparentize($light-blue-color, .7);
+	color: $blue-color;
+	border-color: $blue-color;
 }
 
 .site-header {
