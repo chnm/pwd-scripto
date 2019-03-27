@@ -175,6 +175,10 @@ ul.messages .success {
     font-weight: normal;
 }
 
+.layout-label {
+	margin-right: .5 * $spacing-unit;
+}
+
 .layout button:not(:disabled):hover {
 	border: 1px solid #000;
 	border-top-width: 3px;
@@ -214,6 +218,10 @@ ul.messages .success {
 
 .wikitext-flex .textarea-flex textarea {
 	border-color: #000;
+}
+
+.featherlight-content .layout {
+	margin-top: .5 * $spacing-unit;
 }
 
 #compare-table td {
