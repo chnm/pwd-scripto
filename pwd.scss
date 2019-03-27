@@ -167,6 +167,11 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
     font-weight: normal;
 }
 
+.layout button:not(:disabled):hover {
+	border: 1px solid #000;
+	border-top-width: 3px;
+}
+
 .status-field {
     margin-top: 0;
 }
@@ -176,11 +181,16 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
 }
 
 .panzoom-container {
-    background-color: #fff;
+    background-color: rgba(255,255,255,.3);
+    border: 1px solid #000;
 }
 
 .change-summary {
 	margin-top: (-1.75 * $spacing-unit);
+}
+
+.wikitext-flex .textarea-flex textarea {
+	border-color: #000;
 }
 
 #compare-table td {
