@@ -157,10 +157,17 @@ ul.messages .success {
 	text-align: center;
 }
 
+.resource-content .project.resource-metadata,
+.resource-metadata + .resource-list {
+	margin: $spacing-unit auto;
 }
 
 .post-content .resource-tile h4 {
     font-size: 1.125 * $base-font-size;
+}
+
+.resource-metadata + .resource-list {
+	padding-left: 0;
 }
 
 .resource-tile > div {
