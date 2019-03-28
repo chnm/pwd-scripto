@@ -200,6 +200,28 @@ ul.messages .success {
 	margin: $spacing-unit auto;
 }
 
+.resource-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resource-metadata .property h4 {
+    font-size: $base-font-size;
+    font-variant: small-caps;
+    width: 30%;
+}
+
+.resource-metadata .property {
+    border-bottom: 1px solid $grey-color-dark;
+    margin: 0;
+    padding: (.5 * $spacing-unit) 0;
+    display: flex;
+}
+
+.resource-metadata .property .values {
+    width: 70%;
+}
+
 .post-content .resource-tile h4 {
     font-size: 1.125 * $base-font-size;
 }
