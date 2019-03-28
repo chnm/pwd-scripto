@@ -66,6 +66,20 @@ input:not([type="submit"]):not([type="file"]):not([type="radio"]):not([type="che
 	border-color: #000;
 }
 
+th.title {
+    width: 50%;
+}
+
+.resource-media {
+    height: 2 * $spacing-unit;
+    width: 2 * $spacing-unit;
+    margin-right: (.5 * $spacing-unit);
+}
+
+.resource-title {
+    flex: 2;
+}
+
 #back-to-top {
 	border-radius: 0;
 	background-color: $light-blue-color;
