@@ -205,6 +205,17 @@ ul.messages .success {
     margin: 0 auto;
 }
 
+.resource-content .resource-metadata,
+.resource-content .resource-list {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.resource-content .resource-metadata {
+    order: 2;
+}
+
 .resource-metadata .property h4 {
     font-size: $base-font-size;
     font-variant: small-caps;
