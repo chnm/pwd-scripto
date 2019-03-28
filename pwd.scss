@@ -88,6 +88,44 @@ ul.messages .success {
 	border-color: $blue-color;
 }
 
+.trigger {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: -9999px;
+        background-color: rgba(206,206,206,0.5);
+        z-index: -1;
+    }
+}
+
+.trigger .site-nav {
+    width: auto;
+    order: 2;
+    
+    &:before {
+        content: none;
+    }
+}
+
+.trigger .site-nav > .page-link:first-child {
+    display: none;
+}
+
+.trigger .project-nav {
+    order: 1;
+}
+
+.trigger .project-nav li {
+    margin: 0 $spacing-unit 0 0;
+}
+
 .site-header {
     border: 0;
 }
@@ -122,7 +160,7 @@ ul.messages .success {
 }
 
 .project-nav h2 {
-    font-size: $base-font-size;
+    display: none;
 }
 
 #scripto-search {
