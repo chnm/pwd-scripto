@@ -389,3 +389,84 @@ ul.messages .success {
         background-color: transparent;
     }
 }
+
+@media screen and (max-width: 39.9375rem) {
+    .site-header .wrapper > .site-title {
+        line-height: 1.25;
+        padding: (.25 * $spacing-unit) (2 * $spacing-unit) (.25 * $spacing-unit) (.5 * $spacing-unit);
+        text-align: left;
+    }
+    
+    .site-header .wrapper > .top-nav {
+        padding: 0;
+        position: relative;
+    }
+    
+    .trigger .site-nav:before {
+        background-color: transparent;
+    }
+    
+    .top-nav label[for="nav-trigger"] {
+        background-color: transparent;
+        border-color: transparent;
+        position: absolute;
+        right: 0;
+    }
+    
+    .top-nav input:checked ~ .trigger {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .top-nav .page-link {
+        border-bottom: 0;
+    }
+    
+    .top-nav .project-nav {
+        text-align: center;
+        border-top: 1px solid #cecece;
+        padding: (.5 * $spacing-unit);
+        margin: (.25 * $spacing-unit) 0 0;
+    }
+
+    .trigger .site-nav > .page-link:nth-child(2) {
+        justify-content: center;
+        width: 100%;
+        background-color: $yellow-color;
+        vertical-align: top;
+    }
+    
+    .site-nav .page-link.user-toggle {
+        display: none;
+    }
+
+    .top-nav .user {
+        padding-top: (.5 * $spacing-unit);
+    }
+    
+    .user-menu {
+        background-color: transparent;
+        top: 0;
+    }
+    
+    .user-menu .field {
+        display: flex;
+        width: 100%;
+    }
+    
+    .user-menu .field .field-meta {
+        width: 30%;
+        text-align: right;
+        padding-right: (.5 * $spacing-unit);
+    }
+
+    .user-menu .field .inputs {
+        width: 70%;
+    }
+    
+    #scriptologinform input[type="submit"] {
+        margin: 0 auto;
+        display: block;
+    }
+
+}
