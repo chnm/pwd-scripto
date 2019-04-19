@@ -391,7 +391,16 @@ ul.messages .success {
 }
 
 @media screen and (max-width: 39.9375rem) {
+    .page-content {
+        padding: (.5 * $spacing-unit) 0;
+    }
+    
+    .post-header {
+        margin-bottom: (.5 * $spacing-unit);
+    }
+    
     .site-header .wrapper > .site-title {
+        font-size: 1.375 * $base-font-size;
         line-height: 1.25;
         padding: (.25 * $spacing-unit) (2 * $spacing-unit) (.25 * $spacing-unit) (.5 * $spacing-unit);
         text-align: left;
@@ -400,6 +409,7 @@ ul.messages .success {
     .site-header .wrapper > .top-nav {
         padding: 0;
         position: relative;
+        top: (.125 * $spacing-unit);
     }
     
     .trigger .site-nav:before {
@@ -427,6 +437,27 @@ ul.messages .success {
         border-top: 1px solid #cecece;
         padding: (.5 * $spacing-unit);
         margin: (.25 * $spacing-unit) 0 0;
+    }
+    
+    .sorting-toggle, 
+    .filtering-toggle {
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid #000;
+        margin-bottom: 0;
+        
+        &.open > form,
+        &.open > a:after {
+            background-color: transparent;
+        }
+    }
+    
+    nav.pagination {
+        margin-left: 0;
+    }
+    
+    .filtering-toggle {
+        border-bottom: 1px solid #000;
     }
 
     .trigger .site-nav > .page-link:nth-child(2) {
@@ -468,5 +499,30 @@ ul.messages .success {
         margin: 0 auto;
         display: block;
     }
+    
+    .post-title {
+        font-size: 1.25 * $base-font-size;
+        text-align: left;
+    }
+    
+    .post-subtitle {
+        text-align: left;
+    }
+    
+    .media-head {
+        align-items: flex-end;
+    }
+    
+    .status-field {
+        margin-bottom: 0;
+        break-before: always;
+    }
+    
+    .change-summary {
+        margin-top: 0;
+    }
 
+    .tablesaw-stack tbody tr {
+        border-color: #000;
+    }
 }
